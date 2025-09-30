@@ -1,0 +1,23 @@
+--ANIMACION + VFX PARA EL DUMMY (VFX BUGGEADO, SOLO USA LA ANIMACION PLS)
+
+local dummy = workspace.Live:WaitForChild("Weakest Dummy")
+local humanoid = dummy:WaitForChild("Humanoid")
+local torso = dummy:WaitForChild("Torso")
+
+-- 🔹 Reproducir animación
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://83905432418191"
+local track = humanoid:LoadAnimation(anim)
+track:Play()
+
+-- 🔹 Clonar y activar VFX
+local vfx = game.ReplicatedStorage.Emotes.VFX.Embers:Clone()
+vfx.Parent = torso
+
+for _,d in ipairs(vfx:GetDescendants()) do
+	if d:IsA("ParticleEmitter") then
+		d:Emit(50)
+	elseif d:IsA("Beam") or d:IsA("Trail") or d:IsA("Light") then
+		d.Enabled = true
+	end
+end
