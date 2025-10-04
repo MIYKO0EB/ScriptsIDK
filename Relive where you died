@@ -1,4 +1,4 @@
-local Players = game:GetService("Players")
+ulocal Players = game:GetService("Players")
 local player = Players.LocalPlayer
 local lastDeathPos = nil
 local animId = "rbxassetid://123464270068"
