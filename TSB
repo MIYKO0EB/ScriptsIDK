@@ -1,0 +1,36 @@
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local lastDeathPos = nil
+local animId = "rbxassetid://123464270068"
+local blockTime = 1.2
+
+local function onCharacterAdded(char)
+	local humanoid = char:WaitForChild("Humanoid")
+	local hrp = char:WaitForChild("HumanoidRootPart")
+	if lastDeathPos then
+		hrp.CFrame = CFrame.new(lastDeathPos)
+		local anim = Instance.new("Animation")
+		anim.AnimationId = animId
+		local track = humanoid:LoadAnimation(anim)
+		for _, t in ipairs(humanoid:GetPlayingAnimationTracks()) do
+			t:Stop()
+		end
+		track:Play()
+		humanoid.AutoRotate = false
+		humanoid:ChangeState(Enum.HumanoidStateType.Physics)
+		task.delay(blockTime, function()
+			if humanoid and humanoid.Parent then
+				humanoid.AutoRotate = true
+				humanoid:ChangeState(Enum.HumanoidStateType.GettingUp)
+			end
+		end)
+	end
+	humanoid.Died:Connect(function()
+		if hrp and hrp.Parent then
+			lastDeathPos = hrp.Position
+		end
+	end)
+end
+
+player.CharacterAdded:Connect(onCharacterAdded)
+if player.Character then onCharacterAdded(player.Character) end
