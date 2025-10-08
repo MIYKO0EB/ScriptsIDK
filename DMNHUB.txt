@@ -1,0 +1,2772 @@
+-- ventana
+
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "DOMAIN HUB",
+   Icon = 120815996782931, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "Cargando...",
+   LoadingSubtitle = "by MIYKO",
+   ShowText = "DOMAIN", -- for mobile users to unhide rayfield, change if you'd like
+   Theme = "Amethyst", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   ToggleUIKeybind = "P", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Big Hub"
+   },
+
+   Discord = {
+      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Key in discord",
+      Subtitle = "sistema de key",
+      Note = "es solo un remaster de EBHUBR", -- Use this to tell the user how to get a key
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"IREVIVETHISSHIT"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+local Tab1 = Window:CreateTab("|EMOTES / ANIMATIONS|", 15143528348) -- Title, Image
+local Tab2 = Window:CreateTab("|MOVESETS|", 17140853847) -- Title, Image
+local Tab3 = Window:CreateTab("|UTILITY|", 12285568530) -- Title, Image
+local Tab4 = Window:CreateTab("|STUFF|", 12285568530) -- Title, Image
+local Tab5 = Window:CreateTab("|HUBS|", 120815996782931) -- Title, Image
+local Tab6 = Window:CreateTab("|AUTO STUFF|", 12285568530) -- Title, Image
+local Tab7 = Window:CreateTab("|UNDERTALE MUSIC?!?!?!|", 4483362458) -- Title, Image
+local Tab8 = Window:CreateTab("|KJ ANIM|", 4483362458) -- Title, Image
+local Tab9 = Window:CreateTab("|HISTORIAL DE ACTUALIZACIONES|", 4483362458) -- Title, Image
+
+local Section = Tab1:CreateSection("BASICS EMOTES & ANIMATIONS")
+
+local Button = Tab1:CreateButton({
+   Name = "FREE EMOTE",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyborg883/EmoteGui/refs/heads/main/Protected_4900496055951847.lua"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab1:CreateButton({
+   Name = "AMIMATIONS GUI",
+   Callback = function()
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/Mautiku/ehh/main/strong%20guest.lua.txt'))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Section = Tab2:CreateSection("SAITAMA JJK")
+
+local Button = Tab2:CreateButton({
+   Name = "GOJO V2",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-The-Strongest-Battleground-Gojo-manga-Tsb-30660"))()
+      -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "GOJO V2 (NO MORPH)",
+   Icon = 15143528348,
+   Callback = function()
+   getgenv().morph = false 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/BaldyToSorcerer/refs/heads/main/LatestV2.lua"))()
+   end
+})
+
+
+local Button = Tab2:CreateButton({
+   Name = "SUKUNA",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/damir512/whendoesbrickdie/main/tspno.txt",true))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "ITADORI",
+   Callback = function()
+       loadstring(game:HttpGet('https://pastefy.app/Tj2DSaQA/raw'))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "Toji",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/nullrush0/Toji/refs/heads/main/Lua"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "Normal punch to Black flash",
+   Callback = function()
+       loadstring(game:HttpGet("https://pastefy.app/Ck2z0lcr/raw"))();
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "MEGUNA V2",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastefy.app/3dQB5Mv5/raw"))();
+      -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "HAKARI",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastefy.app/R9YJF35g/raw"))();
+      -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "ITADORI X SUKUNA",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-tsb-yuji-x-sukuna-script-NOT-MINE-31459"))()
+      -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "GOJO X SUKUNA",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/r3k33551-bot/Acortador-de-scripts/refs/heads/main/Gojo%20and%20Sukuna%20in%20one.txt"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "MAHITO",
+   Callback = function()
+       getgenv().Swordm1= true -- set trueif you want have sword thing on mahito m1
+getgenv().night = false  -- set true if you want night 
+getgenv().plushie = false ---set true if you want plushie mahito 
+getgenv().blackflash = true ---set true if you want v1 truly black flash
+getgenv().chat = false ---set true if you visual to other pov that your mahito
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Kenjihin69/Kenjihin69/refs/heads/main/Mahito%20v2%20sigma%20tp%20exploit'))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "GOJO JSS",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/damir512/jjsgojov3/main/SaitamaToGojoV3_SOURCE-obfuscated_2.txt",true))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Section = Tab2:CreateSection("OTHERS (SAITAMA)")
+
+local Button = Tab2:CreateButton({
+   Name = "Wally west",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Nova2ezz/west/refs/heads/main/Protected_4638864115822087.lua.txt"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "ANTI ESPIRAL",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/sparksnaps/Anti-Spiral./refs/heads/main/Lua"))()
+      -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "SUNG SUHO",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/sparksnaps/Sung-Suho/refs/heads/main/Lua"))()
+      -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "SAITAMA REWORK",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/SaitamaOverhaul/refs/heads/main/Latest.lua"))()
+      -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "ORBITICAL WARRIOR",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/AeryAlex/Scripts/refs/heads/main/Orbitical%20Warrior%20(Obsfucted).lua"))()
+      -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "DUMMY",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/bNQvUpez"))();
+      -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "saitama to Lighting max",
+   Callback = function()
+       getgenv().Settings = {
+    AutoReinitializeOnSpawn = false,
+    Core = {
+        CheckForFunctions = true,
+        DefaultAnimationFadeOut = 0.2,
+        DefaultSoundVolume = 1,
+        DefaultSoundPitch = 1,
+        StopSoundWithAnimation = false,
+        EnableStreakNotifications = true
+    },
+    Visuals_Trail = {
+        Enabled = true,
+        Texture = "rbxassetid://15412407507",
+        Lifetime = 0.3,
+        EmissionStopDelay = 0.4,
+        BaseWidth = 15,
+        Color = ColorSequence.new(Color3.fromRGB(255, 255, 180)),
+        Transparency = NumberSequence.new({
+            NumberSequenceKeypoint.new(0, 0.2),
+            NumberSequenceKeypoint.new(0.2, 0.3),
+            NumberSequenceKeypoint.new(1, 0.3)
+        }),
+        WidthScale = NumberSequence.new({
+            NumberSequenceKeypoint.new(0, 6.73),
+            NumberSequenceKeypoint.new(0.642, 2.59),
+            NumberSequenceKeypoint.new(1, 0)
+        })
+    },
+    Interface = {
+        EnableTextAnimations = true,
+        TextAnimationCharacterDelay = 0.04,
+        UltimateBarLabel = "LIGHTING MODE",
+        UltimateKeybindHint = "[G]",
+        PrimaryThemeColor = Color3.fromRGB(255, 255, 197),
+        InterfaceFont = Enum.Font.GothamBold,
+        TopbarIcon = {
+            Image = "rbxassetid://98053281759624",
+            GlowColor = Color3.fromRGB(255, 227, 71),
+            Label = "Lumino Blitz"
+        }
+    },
+    AbilityNames = {
+        Normal = {
+            "Photon O- Kick",
+            "Consecutive Kicks",
+            "Sweep Kick",
+            "O- Floor Buster"
+        },
+        Ultimate = { --No Ult For Now
+            "Lighting Counter",
+            "Blitz Flip",
+            "Lightspeed Punch",
+            "Finishing Blow"
+        }
+    },
+    Music = {
+        Enabled = true,
+        SoundId = "rbxassetid://132347366936691",
+        Volume = 0.4
+    }
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PhNSecretAgent/LightingMaxY/refs/heads/main/LuaU.lua"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "saitama to kj",
+   Callback = function()
+       ----<< BOOTLEG KJ / Baldy To KJ / KaitamJ >>----
+--[[ Credits: 
+- i.am.an.agent : Script Developer
+- _1.8e308 : Revival Of Script, Script Developer
+]]
+
+--// BUILD January 11 12:00 PM GMT+8 by i.am.an.agent
+
+getgenv().Moveset_Settings = {
+    ["ExecuteOnRespawn"] = true, --// If true, the moveset will load everytime you respawn
+
+    ["TSBStyleNotification"] = true, --// If true, uses the TSB notification when you spawn in with KJ
+
+    ["UseOldCollateralRuin"] = true, --// If true, uses the old Collateral Ruin VFX and SFX
+
+    ["NoWarning"] = true, --// If true, removes the warning that appears when you're not on Saitama
+    ["NoDeathCounterImages"] = false, --// If true, will disable the images that appear in death counter slap
+    ["NoBarrageArms"] = false, --// If true, will destroy the barrage arms that appear when you use consecutive punch
+    ["NoPreysPerilAttract"] = true, --// If true, preys peril will not be able to attract you.
+    ["NoWalls"] = false,
+    ["NoTrees"] = false,
+
+    ["RavageTool"] = true,
+    ["AdrenalineBoostTool"] = true,
+    ["Adrenaline_Multiplier"] = 2, --// how much adrenaline multiplies your speed by
+
+    ["CustomUppercutAnimation"] = true,
+    ["CustomDownslamAnimation"] = true,
+    ["CustomIdleAnimation"] = true,
+
+    ["UltNames"] = {
+        "20 SERIES",
+        "COME AT ME",
+        "I'M DONE",
+    },
+
+    ["MoveNames"] = {
+        ["Normal Punch"] = "Ravaging Kick",
+        ["Consecutive Punches"] = "Fist Fusillade",
+        ["Shove"] = "Swift Sweep",
+        ["Uppercut"] = "Collateral Storm",
+
+        ["Death Counter"] = "Sudden Strike",
+        ["Table Flip"] = "Stoic Bomb",
+        ["Serious Punch"] = "Destructive Power",
+        ["Omni Directional Punch"] = "Omni Directional Fists"
+    },
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/BaldyToKJ/refs/heads/main/Latest.lua"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "MAFIOSO MOVESET",
+   Callback = function()
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/Lovelymoonlight/Lovelymoonlight/refs/heads/main/Baldy%20to%20mafioso'))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "NARUTO",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/LolnotaKid/NarutoBeatUpSasukeAss/refs/heads/main/NarutoCums"))()
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "HELLISH MOVESET",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/HellishAgem/HellishMovesetCutscene/refs/heads/main/Protected_6748082827088148.txt"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "KKJ",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/4ntrax7w7v9/4ntrax-Scripts/refs/heads/main/KKJ-Moveset"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "goku namek",
+   Callback = function()
+       getgenv().DBZEnvEnabled = true -- better color (dont remove)
+getgenv().GokuSSJFit = true -- true or false if you want the fit (dont remove)
+-- maybe broken for mob users
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Nova2ezz/GokuNamekSSJ/refs/heads/main/SSJ.lua"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "JUN",
+   Callback = function()
+       loadstring(game:HttpGet("https://gist.githubusercontent.com/GoldenHeads2/f66279000c58a020e894a6db44914838/raw/62e53e1acacec0b38b43cd0f594292c32e09c39b/gistfile1.txt"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "Shinji",
+   Callback = function()
+       getgenv().speedtools = true --- set true if you want use this tool if you want to run
+getgenv().speedpunch= false --- tp and normal Punch
+getgenv().dance= false --- set true if you want to this dance song made by rebzyyx all I want is you 
+getgenv().night= false -- set true if you want to day to night 
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Kenjihin69/Kenjihin69/refs/heads/main/Shinji%20tp%20exploit'))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "gunner",
+   Callback = function()
+       loadstring(game:HttpGet("https://pastebin.com/raw/XiBREwwK"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "invencible",
+   Callback = function()
+       loadstring(game:HttpGet("https://pastefy.app/BtDQqi2c/raw"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "SANS MOVESET",
+   Callback = function()
+       loadstring(game:HttpGet("https://paste.ee/r/rF9d3"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Section = Tab2:CreateSection("GAROU MOVESETS")
+
+local Button = Tab2:CreateButton({
+   Name = "Garou Rework",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/kuXQ6Pdm"))();
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "Soul survivor",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/S1gmaGuy/MinosPrimeFixed/refs/heads/main/ThefixIsSoSigma"))()
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "Sonic.exe",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastefy.app/yzjyz9bZ/raw"))()
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "AKAZA",
+   Callback = function()
+       loadstring(game:HttpGet("https://paste.ee/r/zzvAH"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "OKARUN",
+   Callback = function()
+       loadstring(game:HttpGet"https://paste.ee/r/Pn4oj")()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "DEKU",
+   Callback = function()
+       loadstring(game:HttpGet("https://pastebin.com/raw/xKextYP5"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "Star glicher",
+   Callback = function()
+       loadstring(game:HttpGet("https://paste.ee/r/mmQkO"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "Kizaru",
+   Callback = function()
+       loadstring(game:HttpGet("https://paste.ee/r/NPnfk"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "Void garou",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/yes1nt/yes/refs/heads/main/Void%20Reaper%20Obfuscated.txt"))()
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "GOJO",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/S1gmaGuy/MyWifiSoBad/refs/heads/main/Garou%20to%20Gojo"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "GOKU",
+   Callback = function()
+       loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-Hero-hunter-moveset-into-OP-goku-moveset-17468"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Section = Tab2:CreateSection("UNIVERSAL")
+
+local Button = Tab2:CreateButton({
+   Name = "TRASHCAN MAN",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/yes1nt/yes/refs/heads/main/Trashcan%20Man",true))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Section = Tab2:CreateSection("ATOMIC MOVESETS")
+
+local Button = Tab2:CreateButton({
+   Name = "DARK LORD",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Qaiddanial2904/Main/refs/heads/main/Dark%20lord"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "TOJI",
+   Callback = function()
+       loadstring(game:HttpGet("https://pastebin.com/raw/SiS57Qj6"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Section = Tab2:CreateSection("SONIC MOVESETS")
+
+local Button = Tab2:CreateButton({
+   Name = "True sonic",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/AeryAlex/Scripts/refs/heads/main/True-Sonic%20(OBSFUCTED).lua"))();
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "1X1X1X1",
+   Callback = function()
+       loadstring(game:HttpGet("https://gist.githubusercontent.com/GoldenHeads2/900e87ffc32f3c740930ccb106dd6abf/raw/358c5bf0f0a6aa25946718288dab006e3ae7e1d4/gistfile1.txt"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Section = Tab2:CreateSection("SUIRYU MOVESETS")
+
+local Button = Tab2:CreateButton({
+   Name = "Mahito",
+   Callback = function()
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/GreatestLime4K/mahitotsb/refs/heads/main/Protected_6381580361331378.txt'))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "Guest 666",
+   Callback = function()
+   local Keybind = "E" -- shortcut to activate variant(only work on device that uses keyboard to play)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/memeenjoyer43/tsbg/refs/heads/main/Guest%20666"))()(Keybind)
+--SHINJI
+getgenv().speedtools = true --- set true if you want use this tool if you want to run
+getgenv().speedpunch= false --- tp and normal Punch
+getgenv().dance= false --- set true if you want to this dance song made by rebzyyx all I want is you 
+getgenv().night= false -- set true if you want to day to night 
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Kenjihin69/Kenjihin69/refs/heads/main/Shinji%20tp%20exploit'))()
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "KJ",
+   Callback = function()
+       loadstring(game:HttpGet("https://pastebin.com/raw/0Vjkrsmr"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "DEKU",
+   Callback = function()
+       loadstring(game:HttpGet("https://github.com/aggiealledge/obfuscated-scripts/raw/refs/heads/main/deku%20suiryu%20thingy.txt"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "GOJO",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/PlexTheOne/TSB/refs/heads/main/GojoSatoru.lua"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Section = Tab3:CreateSection("UTILITY")
+
+local Button = Tab3:CreateButton({
+   Name = "Rejoin",
+   Callback = function()
+       local TeleportService = game:GetService("TeleportService")
+	local Players = game:GetService("Players")
+	local LocalPlayer = Players.LocalPlayer
+	
+	local Rejoin = coroutine.create(function()
+		local Success, ErrorMessage = pcall(function()
+			TeleportService:Teleport(game.PlaceId, LocalPlayer)
+		end)
+	
+		if ErrorMessage and not Success then
+			warn(ErrorMessage)
+		end
+	end)
+	
+	coroutine.resume(Rejoin)
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab3:CreateButton({
+   Name = "Low gfx",
+   Callback = function()
+       loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Low-GFX-38613"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab3:CreateButton({
+   Name = "RUN TOOL",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/r3k33551-bot/Acortador-de-scripts/refs/heads/main/run%20tool.txt"))()
+      -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab3:CreateButton({
+   Name = "CHARACTER ESP",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ArchIsDead/Arch-Vault/refs/heads/main/tsb-char-esp.lua"))()
+      -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab3:CreateButton({
+   Name = "KILLS FARM",
+   Callback = function()
+       loadstring(game:HttpGet("https://pastebin.com/raw/e20Pri4d"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab3:CreateButton({
+   Name = "AIMBOT BETA",
+   Callback = function()
+       loadstring(game:HttpGet("https://pastebin.com/raw/En5KNuvj"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab3:CreateButton({
+   Name = "DASH COLDOWN UI",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ArchIsDead/Arch-Vault/refs/heads/main/dash-cooldown-ui.lua"))()
+      -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab3:CreateButton({
+   Name = "BUY LIMITED EMOTES",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ArchIsDead/Arch-Vault/refs/heads/main/buy-unreleased-emote.lua"))()
+      -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab3:CreateButton({
+   Name = "anti dead counter",
+   Callback = function()
+       local teleportPosition = Vector3.new(240.31468200683594, -491.9150390625, -183.96755981445312)
+local platformSize = Vector3.new(10, 1, 10)
+local loopDuration = 5 -- Seconds to loop teleport
+local teleportInterval = 0.05 -- Time between teleports (faster than 0.1 seconds)
+ 
+-- Variables
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local camera = workspace.CurrentCamera
+local savedPosition = nil
+local looping = false
+ 
+-- Function to create a platform
+local function createPlatform(position)
+    local platform = Instance.new("Part")
+    platform.Name = "TemporaryPlatform"
+    platform.Size = platformSize
+    platform.Position = position
+    platform.Anchored = true
+    platform.Color = Color3.new(1, 0, 0) -- Red platform
+    platform.Parent = workspace
+    return platform
+end
+ 
+-- Function to reset the camera
+local function resetCamera()
+    camera.CameraSubject = player.Character:WaitForChild("Humanoid")
+    camera.CameraType = Enum.CameraType.Custom
+end
+ 
+-- Function to loop teleport
+local function loopTeleport()
+    if not character:FindFirstChild("HumanoidRootPart") then return end
+    local rootPart = character.HumanoidRootPart
+    looping = true
+    local platform = createPlatform(teleportPosition + Vector3.new(0, -3, 0)) -- Slightly below the player
+ 
+    local startTime = tick()
+    while tick() - startTime < loopDuration and looping do
+        rootPart.CFrame = CFrame.new(teleportPosition)
+        wait(teleportInterval)
+    end
+ 
+    -- Stop looping and return to saved position
+    platform:Destroy()
+    if savedPosition then
+        rootPart.CFrame = savedPosition
+    end
+    looping = false
+ 
+    -- Reset the camera after teleportation
+    resetCamera()
+end
+ 
+-- Create GUI Button
+local screenGui = Instance.new("ScreenGui", player:WaitForChild("PlayerGui"))
+local button = Instance.new("TextButton", screenGui)
+button.Size = UDim2.new(0, 200, 0, 50)
+button.Position = UDim2.new(0.5, -100, 0) -- Top center of the mobile screen
+button.BackgroundColor3 = Color3.new(0, 0, 0) -- Black background
+button.TextColor3 = Color3.new(0, 1, 0) -- Green text
+button.Font = Enum.Font.SourceSansBold
+button.TextSize = 20
+button.Text = "ANTI COUNTER"
+button.AutoButtonColor = false
+button.BorderSizePixel = 2
+ 
+-- Notification
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Script Loaded";
+    Text = "Made by REDSOUL";
+    Duration = 5; -- Duration in seconds
+})
+ 
+-- Button Click Event
+button.MouseButton1Click:Connect(function()
+    if looping then return end -- Prevent re-triggering
+    if character:FindFirstChild("HumanoidRootPart") then
+        savedPosition = character.HumanoidRootPart.CFrame -- Save position
+        loopTeleport()
+    end
+end)
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab3:CreateButton({
+   Name = "PING ESP",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ArchIsDead/Arch-Vault/refs/heads/main/ping-esp.lua"))()
+      -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab3:CreateButton({
+   Name = "ANTI LAG",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab3:CreateButton({
+   Name = "tp goku anim",
+   Callback = function()
+       loadstring(game:HttpGet(“https://raw.githubusercontent.com/VoidExploit/Gui/refs/heads/main/Gui”))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab3:CreateButton({
+   Name = "extra emote slots",
+   Callback = function()
+       local Players = cloneref(game:GetService('Players'))
+local lplr = Players.LocalPlayer
+
+
+lplr:SetAttribute('ExtraSlots', true)
+lplr:SetAttribute('VIPServer', true)
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab3:CreateButton({
+   Name = "HEALT ESP",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/ArchIsDead/Arch-Vault/refs/heads/main/health-esp.lua"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab3:CreateButton({
+   Name = "PEOPLE DASH CD ESP",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/ArchIsDead/Arch-Vault/refs/heads/main/see-peoples-dash-cd.lua"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab3:CreateButton({
+   Name = "NO DASH COLDOWN",
+   Callback = function()
+       workspace:SetAttribute("VIPServer", tostring(game.Players.LocalPlayer.UserId))
+workspace:SetAttribute("VIPServerOwner", game.Players.LocalPlayer.Name)
+workspace:SetAttribute("NoDashCooldown", true)
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab3:CreateButton({
+   Name = "FPS BOOST",
+   Callback = function()
+       local removedecals = false
+local g = game
+local w = g.Workspace
+local l = g.Lighting
+local t = w.Terrain
+t.WaterWaveSize = 0
+t.WaterWaveSpeed = 0
+t.WaterReflectance = 0
+t.WaterTransparency = 0
+l.GlobalShadows = false
+l.FogEnd = 9e9
+l.Brightness = 0
+settings().Rendering.QualityLevel = "Level01"
+for i, v in pairs(g:GetDescendants()) do
+    if v:IsA("Part") or v:IsA("Union") or v:IsA("CornerWedgePart") or v:IsA("TrussPart") then
+        v.Material = "Plastic"
+        v.Reflectance = 0
+    elseif v:IsA("Decal") or v:IsA("Texture") and removedecals then
+        v.Transparency = 1
+    elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+        v.Lifetime = NumberRange.new(0)
+    elseif v:IsA("Explosion") then
+        v.BlastPressure = 1
+        v.BlastRadius = 1
+    elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") or v:IsA("Sparkles") then
+        v.Enabled = false
+    elseif v:IsA("MeshPart") then
+        v.Material = "Plastic"
+        v.Reflectance = 0
+        v.TextureID = 10385902758728957
+    end
+end
+for i, e in pairs(l:GetChildren()) do
+    if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
+        e.Enabled = false
+    end
+end
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab3:CreateButton({
+   Name = "CAMLOCK",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/ArchIsDead/Arch-Vault/refs/heads/main/camlock-tuff.lua"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab3:CreateButton({
+   Name = "TP TOOL",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/r3k33551-bot/Acortador-de-scripts/refs/heads/main/TP"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab3:CreateButton({
+   Name = "no stun",
+   Callback = function()
+       loadstring(game:HttpGet("https://pastebin.com/raw/Ja2NM39A"))()
+
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab3:CreateButton({
+   Name = "keyboard",
+   Callback = function()
+       loadstring(game:HttpGet("https://gist.githubusercontent.com/RedZenXYZ/4d80bfd70ee27000660e4bfa7509c667/raw/da903c570249ab3c0c1a74f3467260972c3d87e6/KeyBoard%2520From%2520Ohio%2520Fr%2520Fr"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab3:CreateButton({
+   Name = "infinite yield",
+   Callback = function()
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab3:CreateButton({
+   Name = "rejoin",
+   Callback = function()
+       local TeleportService = game:GetService("TeleportService")
+	local Players = game:GetService("Players")
+	local LocalPlayer = Players.LocalPlayer
+	
+	local Rejoin = coroutine.create(function()
+		local Success, ErrorMessage = pcall(function()
+			TeleportService:Teleport(game.PlaceId, LocalPlayer)
+		end)
+	
+		if ErrorMessage and not Success then
+			warn(ErrorMessage)
+		end
+	end)
+	
+	coroutine.resume(Rejoin)
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab3:CreateButton({
+   Name = "server hop",
+   Callback = function()
+       local PlaceID = game.PlaceId
+	local AllIDs = {}
+	local foundAnything = ""
+	local actualHour = os.date("!*t").hour
+	local Deleted = false
+	local File = pcall(function()
+		AllIDs = game:GetService('HttpService'):JSONDecode(readfile("NotSameServers.json"))
+	end)
+	if not File then
+		table.insert(AllIDs, actualHour)
+		writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
+	end
+	function TPReturner()
+		local Site;
+		if foundAnything == "" then
+			Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100'))
+		else
+			Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100&cursor=' .. foundAnything))
+		end
+		local ID = ""
+		if Site.nextPageCursor and Site.nextPageCursor ~= "null" and Site.nextPageCursor ~= nil then
+			foundAnything = Site.nextPageCursor
+		end
+		local num = 0;
+		for i,v in pairs(Site.data) do
+			local Possible = true
+			ID = tostring(v.id)
+			if tonumber(v.maxPlayers) > tonumber(v.playing) then
+				for _,Existing in pairs(AllIDs) do
+					if num ~= 0 then
+						if ID == tostring(Existing) then
+							Possible = false
+						end
+					else
+						if tonumber(actualHour) ~= tonumber(Existing) then
+							local delFile = pcall(function()
+								delfile("NotSameServers.json")
+								AllIDs = {}
+								table.insert(AllIDs, actualHour)
+							end)
+						end
+					end
+					num = num + 1
+				end
+				if Possible == true then
+					table.insert(AllIDs, ID)
+					wait()
+					pcall(function()
+						writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
+						wait()
+						game:GetService("TeleportService"):TeleportToPlaceInstance(PlaceID, ID, game.Players.LocalPlayer)
+					end)
+					wait(4)
+				end
+			end
+		end
+	end
+
+	function Teleport()
+		while wait() do
+			pcall(function()
+				TPReturner()
+				if foundAnything ~= "" then
+					TPReturner()
+				end
+			end)
+		end
+	end
+	Teleport()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Section = Tab4:CreateSection("STUFF")
+
+local Button = Tab4:CreateButton({
+   Name = "say hello to random player",
+   Callback = function()
+       local Players = game:GetService("Players")
+	local currentPlayer = Players.LocalPlayer
+	function greetRandomPlayer()
+		local playerList = Players:GetPlayers()
+		local filteredList = {}
+		for _, player in ipairs(playerList) do
+			if player ~= currentPlayer then
+				table.insert(filteredList, player)
+			end
+		end
+		if #filteredList == 0 then
+			print("Нет доступных игроков для приветствия")
+			return
+		end
+		local randomIndex = math.random(1, #filteredList)
+		local randomPlayer = filteredList[randomIndex]
+		local displayName = randomPlayer.DisplayName
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Hi, " .. displayName .. "!", "All")
+	end
+	greetRandomPlayer()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab4:CreateButton({
+   Name = "say 1v1 to random player",
+   Callback = function()
+       local Players = game:GetService("Players")
+	local currentPlayer = Players.LocalPlayer
+	function greetRandomPlayer()
+		local playerList = Players:GetPlayers()
+		local filteredList = {}
+		for _, player in ipairs(playerList) do
+			if player ~= currentPlayer then
+				table.insert(filteredList, player)
+			end
+		end
+		if #filteredList == 0 then
+			print("Нет доступных игроков для приветствия")
+			return
+		end
+		local randomIndex = math.random(1, #filteredList)
+		local randomPlayer = filteredList[randomIndex]
+		local displayName = randomPlayer.DisplayName
+		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(displayName .. " 1v1 with me!", "All")  -- change is u want
+	end
+	greetRandomPlayer()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab4:CreateButton({
+   Name = "ikari pointer",
+   Callback = function()
+       local player = game.Players.LocalPlayer
+local gui = Instance.new("ScreenGui", player:WaitForChild("PlayerGui"))
+
+local button = Instance.new("ImageButton")
+button.Size = UDim2.new(0, 60, 0, 60)
+button.Position = UDim2.new(0.5, -30, 0.85, 0)
+button.BackgroundTransparency = 1
+button.Image = "rbxassetid://15143528348"
+button.ScaleType = Enum.ScaleType.Fit
+button.Parent = gui
+
+local pointer = Instance.new("ImageLabel")
+pointer.Size = UDim2.new(0, 30, 0, 30)
+pointer.Position = UDim2.new(0.5, -15, 0.4, -15)
+pointer.BackgroundTransparency = 1
+pointer.Image = "rbxassetid://15143528348"
+pointer.Visible = false
+pointer.Parent = gui
+
+button.MouseButton1Click:Connect(function()
+    pointer.Visible = not pointer.Visible
+end)
+
+local UserInputService = game:GetService("UserInputService")
+local dragging, dragInput, dragStart, startPos
+
+local function update(input)
+	local delta = input.Position - dragStart
+	button.Position = UDim2.new(
+		startPos.X.Scale, startPos.X.Offset + delta.X,
+		startPos.Y.Scale, startPos.Y.Offset + delta.Y
+	)
+end
+
+button.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+		dragging = true
+		dragStart = input.Position
+		startPos = button.Position
+
+		input.Changed:Connect(function()
+			if input.UserInputState == Enum.UserInputState.End then
+				dragging = false
+			end
+		end)
+	end
+end)
+
+button.InputChanged:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+		dragInput = input
+	end
+end)
+
+UserInputService.InputChanged:Connect(function(input)
+	if input == dragInput and dragging then
+		update(input)
+	end
+end)
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab4:CreateButton({
+   Name = "simple shaders by miyko",
+   Callback = function()
+       local Lighting = game:GetService("Lighting")
+local MaterialService = game:GetService("MaterialService")
+local Workspace = game:GetService("Workspace")
+
+local BareBonesColors = {
+    BrickColor.new("Bright green"),
+    BrickColor.new("Bright blue"),
+    BrickColor.new("Bright yellow"),
+    BrickColor.new("Bright brown"),
+    BrickColor.new("Light stone grey")
+}
+
+Lighting.Ambient = Color3.fromRGB(180, 180, 180)
+Lighting.OutdoorAmbient = Color3.fromRGB(200, 200, 200)
+Lighting.Brightness = 3
+Lighting.FogEnd = 10000
+Lighting.FogColor = Color3.fromRGB(240, 240, 240)
+Lighting.EnvironmentDiffuseScale = 1
+Lighting.EnvironmentSpecularScale = 1
+Lighting.GlobalShadows = true
+Lighting.ClockTime = 14
+Lighting.ExposureCompensation = 0.2
+
+for _, mat in pairs(Enum.Material:GetEnumItems()) do
+    local override = Instance.new("MaterialVariant")
+    override.Parent = MaterialService
+    override.Name = tostring(mat) .. "_BareBones"
+    override.BaseMaterial = mat
+    override.ColorMap = nil
+    override.NormalMap = nil
+    override.StudsPerTile = 0
+    MaterialService:SetOverride(mat, override)
+end
+
+for _, obj in pairs(Workspace:GetDescendants()) do
+    if obj:IsA("BasePart") then
+        obj.Color = BareBonesColors[math.random(1, #BareBonesColors)].Color
+        obj.Material = Enum.Material.SmoothPlastic
+        obj.Reflectance = 0.05
+    end
+end
+
+local cc = Instance.new("ColorCorrectionEffect", Lighting)
+cc.Saturation = 0.4
+cc.Contrast = 0.3
+cc.Brightness = 0.05
+
+local bloom = Instance.new("BloomEffect", Lighting)
+bloom.Intensity = 0.4
+bloom.Threshold = 0.8
+bloom.Size = 56
+
+local dof = Instance.new("DepthOfFieldEffect", Lighting)
+dof.FarIntensity = 0.3
+dof.FocusDistance = 25
+dof.InFocusRadius = 60
+dof.NearIntensity = 0.1
+
+local rays = Instance.new("SunRaysEffect", Lighting)
+rays.Intensity = 0.3
+rays.Spread = 0.7
+
+local atm = Instance.new("Atmosphere", Lighting)
+atm.Density = 0.35
+atm.Offset = 0.25
+atm.Color = Color3.fromRGB(200, 200, 200)
+atm.Decay = Color3.fromRGB(120, 120, 120)
+atm.Glare = 0.3
+atm.Haze = 0.2
+
+print("✅ Simple Shaders")
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab4:CreateButton({
+   Name = "dummy attack",
+   Callback = function()
+       local dummy = workspace.Live:WaitForChild("Weakest Dummy")
+local humanoid = dummy:WaitForChild("Humanoid")
+local torso = dummy:WaitForChild("Torso")
+
+-- 🔹 Reproducir animación
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://83905432418191"
+local track = humanoid:LoadAnimation(anim)
+track:Play()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab4:CreateButton({
+   Name = "AUTO SIMON SAYS COUNTER",
+   Callback = function()
+       local Players = game:GetService("Players")
+local ChatService = game:GetService("Chat")
+local player = Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local hrp = char:WaitForChild("HumanoidRootPart")
+local humanoid = char:WaitForChild("Humanoid")
+
+local TARGET_ANIMATION_ID = "rbxassetid://12351854556"
+
+local CHAT_MESSAGE = "simon says counter"
+
+local detectionRadius = 10
+
+local hasSpoken = false
+
+game:GetService("RunService").RenderStepped:Connect(function()
+    local conditionMet = false
+
+    for _, otherPlayer in pairs(Players:GetPlayers()) do
+        if otherPlayer ~= player and otherPlayer.Character and otherPlayer.Character:FindFirstChild("HumanoidRootPart") and otherPlayer.Character:FindFirstChild("Humanoid") then
+            local otherHRP = otherPlayer.Character.HumanoidRootPart
+            if (otherHRP.Position - hrp.Position).Magnitude <= detectionRadius then
+                local otherHumanoid = otherPlayer.Character.Humanoid
+                local tracks = otherHumanoid:GetPlayingAnimationTracks()
+                for _, track in pairs(tracks) do
+                    if track.Animation and track.Animation.AnimationId == TARGET_ANIMATION_ID then
+                        conditionMet = true
+                        break
+                    end
+                end
+            end
+        end
+        if conditionMet then break end
+    end
+
+    if conditionMet and not hasSpoken then
+        
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(CHAT_MESSAGE, "All")
+        hasSpoken = true
+    end
+
+    if not conditionMet then
+        hasSpoken = false
+    end
+end)
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab4:CreateButton({
+   Name = "WHITE BEARD effects",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Tariviste/Scripts/refs/heads/main/Whitebeard%20Script%20TSB"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab4:CreateButton({
+   Name = "SHADERS",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/r3k33551-bot/Acortador-de-scripts/refs/heads/main/high-shaders.txt"))()
+      -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab4:CreateButton({
+   Name = "HEIN HEIN",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/r3k33551-bot/Acortador-de-scripts/refs/heads/main/Hein%20hein%3F!%3F"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab4:CreateButton({
+   Name = "DICK?!!??!",
+   Callback = function()
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/Avtor1zaTion/NO-FE-SNAKE/refs/heads/main/NO-FE-Snake.txt'))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab4:CreateButton({
+   Name = "GOJO EFFECTS",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/r3k33551-bot/Acortador-de-scripts/refs/heads/main/gojos%20infinity.txt"))()
+      -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab4:CreateButton({
+   Name = "Toji morph",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Gojohin/TojiShibuya/refs/heads/main/TojiShibuya"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab4:CreateButton({
+   Name = "crab boss",
+   Callback = function()
+       game:GetService("Players").LocalPlayer.Character.Communicate:FireServer({Goal = 'Change Character',Character = 'Crab Boss'})
+          -- The function that takes place when the button is pressed
+   end,
+})
+
+
+local Button = Tab4:CreateButton({
+   Name = "kj ult",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Ahma174/Tsb-Scripts/refs/heads/main/KJ%20Ultimate.lua"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab4:CreateButton({
+   Name = "SUBSPACE",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/DC6q7z55"))()
+   end,
+})
+
+local Button = Tab4:CreateButton({
+   Name = "EPIC HORNS",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/ArchIsDead/Arch-Vault/refs/heads/main/free-limited-visual.lua"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab4:CreateButton({
+   Name = "ARCH-VAULT SHADERS",
+   Callback = function()
+       local Lighting = game:GetService("Lighting")
+for i,v in next,Lighting:GetDescendants() do v:Destroy() end
+Lighting.Ambient = Color3.new(0,0,0)
+Lighting.Brightness = 2
+Lighting.ColorShift_Bottom = Color3.fromRGB(0,150,255)
+Lighting.ColorShift_Top = Color3.fromRGB(255,147,0)
+Lighting.EnvironmentDiffuseScale = 1
+Lighting.EnvironmentSpecularScale = 1
+Lighting.OutdoorAmbient = Color3.new(0,0,0)
+Lighting.ClockTime = 17.258
+Lighting.ExposureCompensation = -1
+local Sun = Instance.new("Sky",Lighting)
+Sun.CelestialBodiesShown = true
+Sun.SunTextureId = "rbxassetid://6281397906"
+local Rays = Instance.new("SunRaysEffect",Lighting)
+Rays.Intensity = 1
+local Atmosphere = Instance.new("Atmosphere",Lighting)
+Atmosphere.Density = 0.5
+Atmosphere.Color = Color3.fromRGB(192,192,192)
+Atmosphere.Decay = Color3.fromRGB(192,192,192)
+Atmosphere.Glare = 1.5
+Atmosphere.Haze = 2
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab4:CreateButton({
+   Name = "JERK OFF",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/r3k33551-bot/Acortador-de-scripts/refs/heads/main/JERK%20OFF"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab4:CreateButton({
+   Name = "FAKE ULT",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/r3k33551-bot/Acortador-de-scripts/refs/heads/main/Fake%20omni"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab4:CreateButton({
+   Name = "GOJO intro",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Onihub-sigma/OniHub-Gojo-Public/refs/heads/main/Gojo%20Onihub%20Public.txt"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Section = Tab5:CreateSection("HUBS")
+
+local Button = Tab5:CreateButton({
+   Name = "key CRAZY BATTLEGROUND",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-The-strongest-battleground-50830"))()
+      -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab5:CreateButton({
+   Name = "tech hub",
+   Callback = function()
+   loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\75\105\101\116\98\97\47\75\105\101\116\98\97\47\114\101\102\115\47\104\101\97\100\115\47\109\97\105\110\47\77\121\37\50\48\103\117\105\37\50\48\105\110\116\114\111\34\41\41\40\41")()
+      -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab5:CreateButton({
+   Name = "AUTOCOMBOS ui",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastefy.app/UY1oh6PG/raw"))()
+      -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab5:CreateButton({
+   Name = "Movesets ui",
+   Callback = function()
+   loadstring(game:HttpGet("https://gist.githubusercontent.com/proscripter400/b24547203a4cc12bdcfe77fd13dd7580/raw/fb8048c0d5b59d626879b1a06cfedaae3e7ee205/charhub"))()
+      -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab5:CreateButton({
+   Name = "MOVESETS UI (2)",
+   Callback = function()
+       loadstring(game:HttpGet("https://gist.githubusercontent.com/proscripter400/b24547203a4cc12bdcfe77fd13dd7580/raw/fb8048c0d5b59d626879b1a06cfedaae3e7ee205/charhub"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab5:CreateButton({
+   Name = "MOVESET UI (3)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/JakeScripterz/Arsenic/refs/heads/main/Arsenic-Reborn"))()
+   end,
+})
+
+local Button = Tab5:CreateButton({
+   Name = "COREX HUB V4",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/gamerscripter90/Corexhubv4/main/Main.txt"))()
+   end,
+})
+
+local Button = Tab5:CreateButton({
+   Name = "MEREBENNIE HUB",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/MerebennieOfficial/ExoticJn/refs/heads/main/Merebennie%20Hub%20V2"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab5:CreateButton({
+   Name = "BLOX TRAP",
+   Callback = function()
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/qwertyui-is-back/Bloxstrap/main/Initiate.lua'), 'lol')()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab5:CreateButton({
+   Name = "GHOST HUB",
+   Callback = function()
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab5:CreateButton({
+   Name = "Vexon hub",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/DiosDi/VexonHub/refs/heads/main/VexonHub"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab5:CreateButton({
+   Name = "phantasm hub",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/ATrainz/Phantasm/refs/heads/main/Games/TSB.lua"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab5:CreateButton({
+   Name = "ARCH VAULT",
+   Callback = function()
+       loadstring(game:HttpGet("https://arch-vaults.vercel.app"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab5:CreateButton({
+   Name = "FREE LIMITED EMOTES by me",
+   Callback = function()
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/MIYKO0EB/ScriptsIDK/refs/heads/main/EMOTE%20HUB%20(50-100).txt'))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Section = Tab5:CreateSection("INFINITE STUDIOS")
+
+local Button = Tab5:CreateButton({
+   Name = "LIMITED EMOTES HUB",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/NetlessScripter/GOKU/refs/heads/main/FREE%20EMOTES%20GUI"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab5:CreateButton({
+   Name = "KEY LIMITED EMOTES",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/NetlessScripter/Vegeta/refs/heads/main/KTG"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Section = Tab6:CreateSection("AUTOSTUFF")
+
+local Button = Tab6:CreateButton({
+   Name = "AUTO UPPERCUT",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/gamerscripter90/Jisj/main/autouppercutallcharacter.lua.txt"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab6:CreateButton({
+   Name = "SLIDE DASH MEREBENNIE",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/MerebennieOfficial/ExoticJn/main/SidedashAssist"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab6:CreateButton({
+   Name = "SIDE DASH FROM TIKTOK",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyborg883/FakeDash/refs/heads/main/Protected_5833389828844912.lua"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab6:CreateButton({
+   Name = "Auto Block notpaki",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyborg883/CombatGUI/refs/heads/main/TSBCombatGUI"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab6:CreateButton({
+   Name = "M1 RESET notpaki",
+   Callback = function()
+       getgenv().EmoteDashButton = true
+getgenv().M1ResetMethod = 1
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyborg883/M1Reset/refs/heads/main/Protected_7911467234955743.lua"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab6:CreateButton({
+   Name = "OreoTech notpaki",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyborg883/OreoTech/refs/heads/main/Protected_6856895483929371.lua"))()
+
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab6:CreateButton({
+   Name = "lethal dash",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyborg883/InstantLethal/refs/heads/main/Protected_5983112998592296.lua"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab6:CreateButton({
+   Name = "kyoto & lord heaven notpaki",
+   Callback = function()
+       getgenv().Requires4M1 = false -- Set this to true if you want to do side dash before Flowing Water
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyborg883/Combos/refs/heads/main/Protected_6711617962776331.lua"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab6:CreateButton({
+   Name = "instand twisted notpaki",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyborg883/InstantTwistedRevamp/refs/heads/main/Protected_7455521176683315.lua"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab6:CreateButton({
+   Name = "auto tech notpaki",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyborg883/NewAutoTech/refs/heads/main/Protected_6389347658054908.lua"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab6:CreateButton({
+   Name = "supa v2",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/MerebennieOfficial/ExoticJn/refs/heads/main/Supa%20V3"))()
+
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab6:CreateButton({
+   Name = "Kiba v4",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/MerebennieOfficial/ExoticJn/refs/heads/main/Kibav4"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+
+local Section = Tab7:CreateSection("UNDERTALE UWU")
+
+local Button = Tab7:CreateButton({
+   Name = "TIME PARADOX",
+   Callback = function()
+   local HttpService = game:GetService("HttpService")
+
+-- The URL to the MP3 file from GitHub (HAS TO BE RAW OR ELSE WONT WORK)
+local url = "https://github.com/r3k33551-bot/UMTP/raw/refs/heads/main/esquii%20%20Time%20Paradox.mp3"
+
+
+-- Save the sound data to a local file
+writefile("LoveForYou.mp3", game:HttpGet(url))
+
+print("Sound file saved successfully!")
+local sound = Instance.new('Sound')
+sound.Parent = game.Players.LocalPlayer.Character
+sound.Volume = 1
+sound.SoundId = getcustomasset('LoveForYou.mp3')
+sound:Play()
+   end,
+})
+
+local Button = Tab7:CreateButton({
+   Name = "Spider dance",
+   Callback = function()
+       local HttpService = game:GetService("HttpService")
+
+local url = "https://github.com/r3k33551-bot/UMTP/raw/refs/heads/main/SpotiDownloader.com%20-%20Spider%20Dance%20-%20Toby%20Fox.mp3"
+
+
+writefile("SPIDERDANCE.mp3", game:HttpGet(url))
+
+print("Sound file saved successfully!")
+local sound = Instance.new('Sound')
+sound.Parent = game.Players.LocalPlayer.Character
+sound.Volume = 1
+sound.SoundId = getcustomasset('SPIDERDANCE.mp3')
+sound:Play()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab7:CreateButton({
+   Name = "NGAHHH!!",
+   Callback = function()
+       local HttpService = game:GetService("HttpService")
+
+local url = "https://github.com/r3k33551-bot/UMTP/raw/refs/heads/main/SpotiDownloader.com%20-%20NGAHHH!!%20-%20Toby%20Fox.mp3"
+
+
+writefile("NGA.mp3", game:HttpGet(url))
+
+print("Sound file saved successfully!")
+local sound = Instance.new('Sound')
+sound.Parent = game.Players.LocalPlayer.Character
+sound.Volume = 1
+sound.SoundId = getcustomasset('NGA.mp3')
+sound:Play()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab7:CreateButton({
+   Name = "Spear of justice",
+   Callback = function()
+       local HttpService = game:GetService("HttpService")
+
+local url = "https://github.com/r3k33551-bot/UMTP/raw/refs/heads/main/SpotiDownloader.com%20-%20Spear%20of%20Justice%20-%20Toby%20Fox.mp3"
+
+
+writefile("SOF.mp3", game:HttpGet(url))
+
+print("Sound file saved successfully!")
+local sound = Instance.new('Sound')
+sound.Parent = game.Players.LocalPlayer.Character
+sound.Volume = 1
+sound.SoundId = getcustomasset('SOF.mp3')
+sound:Play()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab7:CreateButton({
+   Name = "Megalovania",
+   Callback = function()
+       local HttpService = game:GetService("HttpService")
+
+local url = "https://github.com/r3k33551-bot/UMTP/raw/refs/heads/main/SpotiDownloader.com%20-%20MEGALOVANIA%20-%20Toby%20Fox.mp3"
+
+
+writefile("MEGALOVANIA.mp3", game:HttpGet(url))
+
+print("Sound file saved successfully!")
+local sound = Instance.new('Sound')
+sound.Parent = game.Players.LocalPlayer.Character
+sound.Volume = 1
+sound.SoundId = getcustomasset('MEGALOVANIA.mp3')
+sound:Play()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab7:CreateButton({
+   Name = "Last goodbay",
+   Callback = function()
+local HttpService = game:GetService("HttpService")
+
+local url = "https://github.com/r3k33551-bot/UMTP/raw/refs/heads/main/SpotiDownloader.com%20-%20Last%20Goodbye%20-%20Toby%20Fox.mp3"
+
+
+writefile("LG.mp3", game:HttpGet(url))
+
+print("Sound file saved successfully!")
+local sound = Instance.new('Sound')
+sound.Parent = game.Players.LocalPlayer.Character
+sound.Volume = 1
+sound.SoundId = getcustomasset('LG.mp3')
+sound:Play()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab7:CreateButton({
+   Name = "Heartache",
+   Callback = function()
+       local HttpService = game:GetService("HttpService")
+
+local url = "https://github.com/r3k33551-bot/UMTP/raw/refs/heads/main/SpotiDownloader.com%20-%20Heartache%20-%20Toby%20Fox.mp3"
+
+
+writefile("HEARTACHE.mp3", game:HttpGet(url))
+
+print("Sound file saved successfully!")
+local sound = Instance.new('Sound')
+sound.Parent = game.Players.LocalPlayer.Character
+sound.Volume = 1
+sound.SoundId = getcustomasset('HEARTACHE.mp3')
+sound:Play()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab7:CreateButton({
+   Name = "Dating start!",
+   Callback = function()
+       local HttpService = game:GetService("HttpService")
+
+local url = "https://github.com/r3k33551-bot/UMTP/raw/refs/heads/main/SpotiDownloader.com%20-%20Dating%20Start!%20-%20Toby%20Fox.mp3"
+
+
+writefile("DS.mp3", game:HttpGet(url))
+
+print("Sound file saved successfully!")
+local sound = Instance.new('Sound')
+sound.Parent = game.Players.LocalPlayer.Character
+sound.Volume = 1
+sound.SoundId = getcustomasset('DS.mp3')
+sound:Play()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab7:CreateButton({
+   Name = "Dating fight!",
+   Callback = function()
+       local HttpService = game:GetService("HttpService")
+
+local url = "https://github.com/r3k33551-bot/UMTP/raw/refs/heads/main/SpotiDownloader.com%20-%20Dating%20Fight!%20-%20Toby%20Fox.mp3"
+
+
+writefile("DF.mp3", game:HttpGet(url))
+
+print("Sound file saved successfully!")
+local sound = Instance.new('Sound')
+sound.Parent = game.Players.LocalPlayer.Character
+sound.Volume = 1
+sound.SoundId = getcustomasset('DF.mp3')
+sound:Play()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab7:CreateButton({
+   Name = "Asgore",
+   Callback = function()
+       local HttpService = game:GetService("HttpService")
+
+local url = "https://github.com/r3k33551-bot/UMTP/raw/refs/heads/main/SpotiDownloader.com%20-%20ASGORE%20-%20Toby%20Fox.mp3"
+
+
+writefile("ASGORE.mp3", game:HttpGet(url))
+
+print("Sound file saved successfully!")
+local sound = Instance.new('Sound')
+sound.Parent = game.Players.LocalPlayer.Character
+sound.Volume = 1
+sound.SoundId = getcustomasset('ASGORE.mp3')
+sound:Play()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Section = Tab8:CreateSection("KJ ANIM")
+
+local Button = Tab8:CreateButton({
+   Name = "m1",
+   Callback = function()
+       loadstring(game:HttpGet("https://pastebin.com/raw/dxZ9PyyX"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab8:CreateButton({
+   Name = "ravage",
+   Callback = function()
+       loadstring(game:HttpGet("https://pastebin.com/raw/pQBSdrBG"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab8:CreateButton({
+   Name = "Swift sweep",
+   Callback = function()
+       loadstring(game:HttpGet("https://pastebin.com/raw/mpNj8beT"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab8:CreateButton({
+   Name = "Collateral ruin",
+   Callback = function()
+       loadstring(game:HttpGet("https://pastebin.com/raw/2JQ7K5hk"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab8:CreateButton({
+   Name = "Stoic bomb",
+   Callback = function()
+       loadstring(game:HttpGet("https://pastebin.com/raw/BQAA19Wh"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab8:CreateButton({
+   Name = "20-20-20 dropkick",
+   Callback = function()
+       loadstring(game:HttpGet("https://pastebin.com/raw/gM5dwCSF"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab8:CreateButton({
+   Name = "Five seasons",
+   Callback = function()
+       loadstring(game:HttpGet("https://pastebin.com/raw/qxJxBvdX"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab8:CreateButton({
+   Name = "ult 1",
+   Callback = function()
+       loadstring(game:HttpGet("https://pastebin.com/raw/J9Kv4Y95"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab8:CreateButton({
+   Name = "ult 2",
+   Callback = function()
+       loadstring(game:HttpGet("https://pastebin.com/raw/pwPfkbXf"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Section = Tab9:CreateSection("Todos los añadidos")
+
+local Button = Tab9:CreateButton({
+   Name = "MADE BY MIYKO IN TIKTOK BRUH",
+   Callback = function()
+       
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab9:CreateButton({
+   Name = "- suyriu to mahito added",
+   Callback = function()
+       
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab9:CreateButton({
+   Name = "- anti lag added",
+   Callback = function()
+       
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab9:CreateButton({
+   Name = "- more auto tech/combo",
+   Callback = function()
+       
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab9:CreateButton({
+   Name = "- Keyboard",
+   Callback = function()
+       
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab9:CreateButton({
+   Name = "- infinite yield",
+   Callback = function()
+       
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab9:CreateButton({
+   Name = "- My emote hub",
+   Callback = function()
+       
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab9:CreateButton({
+   Name = "- more saitama movesets",
+   Callback = function()
+       
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab9:CreateButton({
+   Name = "- more garou movesets",
+   Callback = function()
+       
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab9:CreateButton({
+   Name = "- my own shaders",
+   Callback = function()
+       
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab9:CreateButton({
+   Name = "- ikari saint pointer",
+   Callback = function()
+       
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab9:CreateButton({
+   Name = "Extra things",
+   Callback = function()
+       
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab9:CreateButton({
+   Name = "i wanna kill myself, i think i have depression",
+   Callback = function()
+       
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab9:CreateButton({
+   Name = "but, why? idk why, only i feel that",
+   Callback = function()
+       
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab9:CreateButton({
+   Name = "uhm... I'm closer to finishing my other emotes script",
+   Callback = function()
+       local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Footagesus/WindUI/main/dist/main.lua"))()
+
+local Localization = WindUI:Localization({
+    Enabled = true,
+    Prefix = "loc:",
+    DefaultLanguage = "en",
+    Translations = {
+        ["en"] = {
+            ["WINDUI_EXAMPLE"] = "Proyects Hub",
+            ["WELCOME"] = "Welcome to Proyects Hub!"
+        }
+    }
+})
+
+WindUI.TransparencyValue = 0.2
+WindUI:SetTheme("Dark")
+
+-- Crear ventana principal
+local Window = WindUI:CreateWindow({
+    Title = "loc:WINDUI_EXAMPLE",
+    Icon = "geist:window",
+    Author = "loc:WELCOME",
+    Folder = "ProyectsHub",
+    Size = UDim2.fromOffset(580, 490),
+    Theme = "Dark",
+    SideBarWidth = 200,
+    Acrylic = false
+})
+
+-- Secciones principales
+local Sections = { Main = Window:Section({ Title = "Main", Opened = true }) }
+
+-- Tabs
+local Tabs = {
+    EmotesTest = Sections.Main:Tab({ Title = "Emotes Test" }),
+    LimitedEmotes = Sections.Main:Tab({ Title = "Limited Emotes" }),
+    ServerSettings = Sections.Main:Tab({ Title = "Server Settings" }),
+    CharacterSettings = Sections.Main:Tab({ Title = "Character Settings" }),
+    Stuff = Sections.Main:Tab({ Title = "Stuff" }),
+    Hubs = Sections.Main:Tab({ Title = "Hubs" })
+}
+
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+
+local function waitForCharacter()
+    local char = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+    local hum = char:WaitForChild("Humanoid")
+    local head = char:FindFirstChild("Head")
+    return char, hum, head
+end
+
+local function playAnimWithSFX(animId, sfxId)
+    local char, hum, head = waitForCharacter()
+    if not hum or not head then return end
+    local anim = Instance.new("Animation")
+    anim.AnimationId = animId
+    local track = hum:LoadAnimation(anim)
+    track:Play()
+    if sfxId then
+        local sound = Instance.new("Sound")
+        sound.SoundId = sfxId
+        sound.Volume = 1
+        sound.Parent = head
+        sound:Play()
+        track.Stopped:Connect(function()
+            if sound and sound.Parent then sound:Destroy() end
+        end)
+    end
+    track.Stopped:Connect(function() pcall(function() track:Destroy() end) end)
+end
+
+-- ===== Emotes Test =====
+local emotesTestButtons = {
+    {"Sacudirse", "rbxassetid://14611931363", "rbxassetid://14611940867"},
+    {"Ajustar", "rbxassetid://17266410350", "rbxassetid://1836256328"},
+    {"Caída", "rbxassetid://17107937300", "rbxassetid://17107935019"},
+    {"Mewing", "rbxassetid://16047480326", "rbxassetid://1835831314"},
+    {"Explosión", "rbxassetid://16746824621", "rbxassetid://16746816646"},
+    {"Beneath Me", "rbxassetid://134934729128196", "rbxassetid://106138436425034"},
+    {"Reír", "rbxassetid://8887084105", "rbxassetid://9056830251"}
+}
+
+for _, v in ipairs(emotesTestButtons) do
+    Tabs.EmotesTest:Button({
+        Title = v[1],
+        Callback = function()
+            playAnimWithSFX(v[2], v[3])
+            WindUI:Notify({ Title = v[1], Content = "Executed!", Duration = 3 })
+        end
+    })
+end
+
+-- Embers
+Tabs.EmotesTest:Button({
+    Title = "Embers",
+    Callback = function()
+        local StarterGui = game:GetService("StarterGui")
+local keepLooping = true -- 🔁 controla si sigue el loop
+
+-- 🔊 Sonido de notificación
+local function playSound()
+	local sound = Instance.new("Sound")
+	sound.SoundId = "rbxassetid://6534947240"
+	sound.Volume = 1
+	sound.Parent = workspace
+	sound:Play()
+	game.Debris:AddItem(sound, 3)
+end
+
+-- 🔗 Función para mostrar notificación en loop
+local function showNotification()
+	if not keepLooping then return end
+
+	local bindable = Instance.new("BindableFunction")
+	bindable.OnInvoke = function(button)
+		if button == "Ejecutar" then
+			-- ✅ Aquí va tu script de animación y VFX
+			local p = game.Players.LocalPlayer 
+			local c, h = p.Character, p.Character:WaitForChild("Humanoid")
+
+			local a = Instance.new("Animation")
+			a.AnimationId = "rbxassetid://83905432418191"
+			h:LoadAnimation(a):Play()
+
+			local e = Instance.new("Accessory", c)
+			e.Name = "#EmoteHolder_" .. math.random(1e5)
+			e:SetAttribute("EmoteProperty", true)
+
+			require(game.ReplicatedStorage.Emotes.VFX):MainFunction{
+				Character = c,
+				vfxName = "Embers",
+				SpecificModule = game.ReplicatedStorage.Emotes.VFX,
+				AnimSent = 83905432418191,
+				RealBind = e
+			}
+
+			keepLooping = false
+		elseif button == "Cancelar" then
+			warn("Ejecución cancelada por el usuario.")
+			keepLooping = false
+		else
+			task.delay(1, showNotification)
+		end
+	end
+
+	-- 📌 Mostrar notificación con icono
+	playSound()
+	StarterGui:SetCore("SendNotification", {
+		Title = "MIYKO",
+		Text = "This script was made by MIYKO",
+		Duration = 5,
+		Button1 = "Ejecutar",
+		Button2 = "Cancelar",
+		Callback = bindable,
+		Icon = "rbxassetid://134256414823554"
+	})
+end
+
+-- ▶️ Inicia el loop
+showNotification()
+    end
+})
+
+-- Time Shift
+Tabs.EmotesTest:Button({
+    Title = "Time Shift",
+    Callback = function()
+        local StarterGui = game:GetService("StarterGui")
+local keepLooping = true -- 🔁 controla si sigue el loop
+
+-- 🔊 Sonido de notificación
+local function playSound()
+	local sound = Instance.new("Sound")
+	sound.SoundId = "rbxassetid://6534947240"
+	sound.Volume = 1
+	sound.Parent = workspace
+	sound:Play()
+	game.Debris:AddItem(sound, 3)
+end
+
+-- 🔗 Función para mostrar notificación en loop
+local function showNotification()
+	if not keepLooping then return end
+
+	local bindable = Instance.new("BindableFunction")
+	bindable.OnInvoke = function(button)
+		if button == "Ejecutar" then
+			-- ✅ Aquí va tu script "Time Shift"
+			local p = game.Players.LocalPlayer
+			local c = p.Character or p.CharacterAdded:Wait()
+			local h = c:WaitForChild("Humanoid")
+
+			local a = h:FindFirstChildOfClass("Animator") or Instance.new("Animator", h)
+			local x = Instance.new("Animation")
+			x.AnimationId = "rbxassetid://114451374603244"
+			a:LoadAnimation(x):Play()
+			x:Destroy()
+
+			local e = Instance.new("Accessory")
+			e.Name = "#EmoteHolder_" .. math.random(1e5)
+			e.Parent = c
+			e:SetAttribute("EmoteProperty", true)
+
+			pcall(function()
+				require(game.ReplicatedStorage.Emotes.VFX):MainFunction{
+					Character = c,
+					vfxName = "Time Shift",
+					SpecificModule = game.ReplicatedStorage.Emotes.VFX,
+					AnimSent = 114451374603244,
+					RealBind = e
+				}
+			end)
+
+			keepLooping = false
+		elseif button == "Cancelar" then
+			warn("Ejecución cancelada por el usuario.")
+			keepLooping = false
+		else
+			task.delay(1, showNotification)
+		end
+	end
+
+	-- 📌 Mostrar notificación con icono
+	playSound()
+	StarterGui:SetCore("SendNotification", {
+		Title = "MIYKO",
+		Text = "This script was made by MIYKO",
+		Duration = 5,
+		Button1 = "Ejecutar",
+		Button2 = "Cancelar",
+		Callback = bindable,
+		Icon = "rbxassetid://134256414823554"
+	})
+end
+
+-- ▶️ Inicia el loop
+showNotification()
+    end
+})
+
+-- ===== Limited Emotes =====
+local function BoundlessRage()
+    local StarterGui = game:GetService("StarterGui")
+local Players = game:GetService("Players")
+local p = Players.LocalPlayer
+
+-- Crear ScreenGui para el botón dentro de la notificación
+local gui = Instance.new("ScreenGui")
+gui.Parent = p:WaitForChild("PlayerGui")
+
+local button = Instance.new("TextButton")
+button.Size = UDim2.new(0, 120, 0, 40)
+button.Position = UDim2.new(0.5, -60, 0.7, 0) -- centrado
+button.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+button.TextColor3 = Color3.fromRGB(255, 255, 255)
+button.Font = Enum.Font.GothamBold
+button.TextSize = 14
+button.Text = "Ejecutar Boundless Rage"
+button.Parent = gui
+button.Visible = false
+
+-- Mostrar notificación estilo Roblox
+StarterGui:SetCore("SendNotification", {
+	Title = "Emote Loader",
+	Text = "¿Quieres activar Boundless Rage?",
+	Icon = "rbxassetid://134256414823554", -- tu imagen ID
+	Duration = 5,
+	Button1 = "Sí",
+	Button2 = "No"
+})
+
+-- Cuando el jugador presione el botón "Sí", mostrar botón de ejecución
+game:GetService("StarterGui").CoreGuiChanged:Connect(function()
+	-- Nada aquí, solo placeholder por compatibilidad
+end)
+
+-- Forzar el botón a mostrarse tras 1 seg si el usuario acepta
+task.delay(1, function()
+	button.Visible = true
+end)
+
+-- Acción al presionar el botón
+button.MouseButton1Click:Connect(function()
+	button.Visible = false
+	local c = p.Character or p.CharacterAdded:Wait()
+	local h = c:WaitForChild("Humanoid")
+	local a = h:FindFirstChildOfClass("Animator") or Instance.new("Animator", h)
+
+	local x = Instance.new("Animation")
+	x.AnimationId = "rbxassetid://107649573628906"
+	a:LoadAnimation(x):Play()
+	x:Destroy()
+
+	local e = Instance.new("Accessory")
+	e.Name = "#EmoteHolder_" .. math.random(1e5)
+	e.Parent = c
+	e:SetAttribute("EmoteProperty", true)
+
+	pcall(function()
+		require(game.ReplicatedStorage.Emotes.VFX):MainFunction{
+			Character = c,
+			vfxName = "Boundless Rage",
+			SpecificModule = game.ReplicatedStorage.Emotes.VFX,
+			AnimSent = 107649573628906,
+			RealBind = e
+		}
+	end)
+end)
+    WindUI:Notify({ Title = "Boundless Rage", Content = "Executed!", Duration = 3 })
+end
+
+local function TrueAura()
+    local StarterGui = game:GetService("StarterGui")
+local keepLooping = true -- 🔁 controla si sigue el loop
+
+-- 🔊 Sonido de notificación
+local function playSound()
+	local sound = Instance.new("Sound")
+	sound.SoundId = "rbxassetid://6534947240"
+	sound.Volume = 1
+	sound.Parent = workspace
+	sound:Play()
+	game.Debris:AddItem(sound, 3)
+end
+
+-- 🔗 Función para mostrar notificación en loop
+local function showNotification()
+	if not keepLooping then return end
+
+	local bindable = Instance.new("BindableFunction")
+	bindable.OnInvoke = function(button)
+		if button == "Ejecutar" then
+			-- ✅ Script de animación + VFX "True Aura"
+			local p = game.Players.LocalPlayer
+			local c = p.Character or p.CharacterAdded:Wait()
+			local h = c:WaitForChild("Humanoid")
+
+			local a = h:FindFirstChildOfClass("Animator") or Instance.new("Animator", h)
+			local x = Instance.new("Animation")
+			x.AnimationId = "rbxassetid://103668868712897"
+			a:LoadAnimation(x):Play()
+			x:Destroy()
+
+			local e = Instance.new("Accessory")
+			e.Name = "#EmoteHolder_" .. math.random(1e5)
+			e.Parent = c
+			e:SetAttribute("EmoteProperty", true)
+
+			pcall(function()
+				require(game.ReplicatedStorage.Emotes.VFX):MainFunction{
+					Character = c,
+					vfxName = "True Aura",
+					SpecificModule = game.ReplicatedStorage.Emotes.VFX,
+					AnimSent = 103668868712897,
+					RealBind = e
+				}
+			end)
+
+			keepLooping = false
+		elseif button == "Cancelar" then
+			warn("Ejecución cancelada por el usuario.")
+			keepLooping = false
+		else
+			task.delay(1, showNotification)
+		end
+	end
+
+	-- 📌 Mostrar notificación con icono
+	playSound()
+	StarterGui:SetCore("SendNotification", {
+		Title = "MIYKO",
+		Text = "This script was made by MIYKO",
+		Duration = 5,
+		Button1 = "Ejecutar",
+		Button2 = "Cancelar",
+		Callback = bindable,
+		Icon = "rbxassetid://134256414823554"
+	})
+end
+
+-- ▶️ Inicia el loop
+showNotification()
+    WindUI:Notify({ Title = "True Aura", Content = "Executed!", Duration = 3 })
+end
+
+local function ShadowEruption()
+    local StarterGui = game:GetService("StarterGui")
+local keepLooping = true -- 🔁 controla si sigue el loop
+
+-- 🔊 Sonido de notificación
+local function playSound()
+	local sound = Instance.new("Sound")
+	sound.SoundId = "rbxassetid://6534947240"
+	sound.Volume = 1
+	sound.Parent = workspace
+	sound:Play()
+	game.Debris:AddItem(sound, 3)
+end
+
+-- 🔗 Función para mostrar notificación en loop
+local function showNotification()
+	if not keepLooping then return end
+
+	local bindable = Instance.new("BindableFunction")
+	bindable.OnInvoke = function(button)
+		if button == "Ejecutar" then
+			-- ✅ Script de animación + VFX "Shadow Eruption"
+			local p = game.Players.LocalPlayer
+			local c = p.Character or p.CharacterAdded:Wait()
+			local h = c:WaitForChild("Humanoid")
+
+			local a = h:FindFirstChildOfClass("Animator") or Instance.new("Animator", h)
+			local x = Instance.new("Animation")
+			x.AnimationId = "rbxassetid://121032789756540"
+			a:LoadAnimation(x):Play()
+			x:Destroy()
+
+			local e = Instance.new("Accessory")
+			e.Name = "#EmoteHolder_" .. math.random(1e5)
+			e.Parent = c
+			e:SetAttribute("EmoteProperty", true)
+
+			pcall(function()
+				require(game.ReplicatedStorage.Emotes.VFX):MainFunction{
+					Character = c,
+					vfxName = "Shadow Eruption",
+					SpecificModule = game.ReplicatedStorage.Emotes.VFX,
+					AnimSent = 121032789756540,
+					RealBind = e
+				}
+			end)
+
+			keepLooping = false
+		elseif button == "Cancelar" then
+			warn("Ejecución cancelada por el usuario.")
+			keepLooping = false
+		else
+			task.delay(1, showNotification)
+		end
+	end
+
+	-- 📌 Mostrar notificación con icono
+	playSound()
+	StarterGui:SetCore("SendNotification", {
+		Title = "MIYKO",
+		Text = "This script was made by MIYKO",
+		Duration = 5,
+		Button1 = "Ejecutar",
+		Button2 = "Cancelar",
+		Callback = bindable,
+		Icon = "rbxassetid://134256414823554"
+	})
+end
+
+-- ▶️ Inicia el loop
+showNotification()
+    WindUI:Notify({ Title = "Shadow Eruption", Content = "Executed!", Duration = 3 })
+end
+
+local function LastWill() loadstring(game:HttpGet("https://raw.githubusercontent.com/r3k33551-bot/Acortador-de-scripts/refs/heads/main/obfuscated_script-1758818186602.lua.txt"))() end
+local function FinalSpark() loadstring(game:HttpGet("https://raw.githubusercontent.com/r3k33551-bot/Acortador-de-scripts/refs/heads/main/obf_135fT3c6G0da4X9yckPtKnzWk71fN10B6Z7LQ05T1jdGpaYKNVHxSZHX6caWltcj.lua.txt"))() end
+local function EternalSeal() loadstring(game:HttpGet("https://raw.githubusercontent.com/MIYKO0EB/ScriptsIDK/refs/heads/main/Eternal%20Seal%20by%20MIYKO.txt"))() end
+
+Tabs.LimitedEmotes:Button({ Title = "Boundless Rage", Callback = BoundlessRage })
+Tabs.LimitedEmotes:Button({ Title = "True Aura", Callback = TrueAura })
+Tabs.LimitedEmotes:Button({ Title = "Shadow Eruption", Callback = ShadowEruption })
+Tabs.LimitedEmotes:Button({ Title = "Last Will", Callback = LastWill })
+Tabs.LimitedEmotes:Button({ Title = "Final Spark", Callback = FinalSpark })
+Tabs.LimitedEmotes:Button({ Title = "Eternal Seal", Callback = EternalSeal })
+
+-- Aquí puedes agregar los demás botones de Server Settings, Character Settings, Stuff y Hubs siguiendo la misma estructura
+-- WindUI:Notify se mantiene en cada botón para feedback
+-- ===== Server Settings =====
+Tabs.ServerSettings:Button({ Title = "Rejoin", Callback = function()
+    local TeleportService = game:GetService("TeleportService")
+    local Players = game:GetService("Players")
+    local LocalPlayer = Players.LocalPlayer
+    pcall(function()
+        TeleportService:Teleport(game.PlaceId, LocalPlayer)
+    end)
+    WindUI:Notify({ Title = "Rejoin", Content = "idk", Duration = 3 })
+end })
+
+-- Server Hop (mismo código que antes)
+Tabs.ServerSettings:Button({ Title = "Server Hop", Callback = function()
+    local PlaceID = game.PlaceId
+    local AllIDs = {}
+    local foundAnything = ""
+    local actualHour = os.date("!*t").hour
+    local File = pcall(function() AllIDs = game:GetService('HttpService'):JSONDecode(readfile("NotSameServers.json")) end)
+    if not File then table.insert(AllIDs, actualHour) writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs)) end
+    local function TPReturner()
+        local Site
+        if foundAnything == "" then
+            Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100'))
+        else
+            Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100&cursor=' .. foundAnything))
+        end
+        local ID = ""
+        if Site.nextPageCursor and Site.nextPageCursor ~= "null" and Site.nextPageCursor ~= nil then foundAnything = Site.nextPageCursor end
+        local num = 0
+        for i,v in pairs(Site.data) do
+            local Possible = true
+            ID = tostring(v.id)
+            if tonumber(v.maxPlayers) > tonumber(v.playing) then
+                for _,Existing in pairs(AllIDs) do
+                    if num ~= 0 then
+                        if ID == tostring(Existing) then Possible = false end
+                    else
+                        if tonumber(actualHour) ~= tonumber(Existing) then
+                            pcall(function() delfile("NotSameServers.json") AllIDs = {} table.insert(AllIDs, actualHour) end)
+                        end
+                    end
+                    num = num + 1
+                end
+                if Possible == true then
+                    table.insert(AllIDs, ID)
+                    wait()
+                    pcall(function()
+                        writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
+                        wait()
+                        game:GetService("TeleportService"):TeleportToPlaceInstance(PlaceID, ID, game.Players.LocalPlayer)
+                    end)
+                    wait(4)
+                end
+            end
+        end
+    end
+    local function Teleport()
+        while wait() do
+            pcall(function()
+                TPReturner()
+                if foundAnything ~= "" then TPReturner() end
+            end)
+        end
+    end
+    Teleport()
+end })
+
+-- Teleport Locations Dropdown
+local teleportDropdown = Tabs.ServerSettings:Dropdown({
+    Title = "Teleport Locations",
+    Values = { "Death Counter Room", "Atomic Room", "Baseplate", "Mountain 1", "Mountain 2", "Mountain 3" },
+    Value = "Select Location",
+    Callback = function(option)
+        local player = game.Players.LocalPlayer
+        local character = player.Character or player.CharacterAdded:Wait()
+        local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+        if option == "Death Counter Room" then humanoidRootPart.CFrame = CFrame.new(-92, 29, 20347)
+        elseif option == "Atomic Room" then humanoidRootPart.CFrame = CFrame.new(1079, 155, 23003)
+        elseif option == "Baseplate" then humanoidRootPart.CFrame = CFrame.new(968, 20, 23088)
+        elseif option == "Mountain 1" then humanoidRootPart.CFrame = CFrame.new(266, 699, 458)
+        elseif option == "Mountain 2" then humanoidRootPart.CFrame = CFrame.new(551, 630, -265)
+        elseif option == "Mountain 3" then humanoidRootPart.CFrame = CFrame.new(-107, 642, -328)
+        end
+    end
+})
+
+-- Teleport to Player Dropdown (dinámico)
+local playersDropdown = Tabs.ServerSettings:Dropdown({
+    Title = "Teleport to Player",
+    Values = { "No players available" },
+    Value = "Select a player",
+    Callback = function(selectedName)
+        if not selectedName or selectedName == "Select a player" or selectedName == "No players available" then return end
+        local PlayersService = game:GetService("Players")
+        local LocalP = PlayersService.LocalPlayer
+        local targetPlayer = PlayersService:FindFirstChild(selectedName)
+        if not targetPlayer then
+            for _,pl in ipairs(PlayersService:GetPlayers()) do
+                if pl.Name == selectedName then targetPlayer = pl break end
+            end
+        end
+        if targetPlayer and targetPlayer.Character and LocalP.Character then
+            local targetHRP = targetPlayer.Character:FindFirstChild("HumanoidRootPart")
+            local localHRP = LocalP.Character:FindFirstChild("HumanoidRootPart")
+            if targetHRP and localHRP then
+                pcall(function() localHRP.CFrame = targetHRP.CFrame WindUI:Notify({ Title = "Teleport", Content = "idk", Duration = 3 }) end)
+            end
+        else
+            WindUI:Notify({ Title = "Teleport", Content = "Player not available (idk).", Duration = 3 })
+        end
+    end
+})
+
+local function refreshPlayersList()
+    local PlayersService = game:GetService("Players")
+    local list = {}
+    for _, pl in ipairs(PlayersService:GetPlayers()) do
+        if pl ~= PlayersService.LocalPlayer then table.insert(list, pl.Name) end
+    end
+    if #list == 0 then list = { "No players available" } end
+    playersDropdown:Refresh(list)
+end
+
+refreshPlayersList()
+game:GetService("Players").PlayerAdded:Connect(function() task.defer(refreshPlayersList) end)
+game:GetService("Players").PlayerRemoving:Connect(function() task.defer(refreshPlayersList) end)
+
+-- ===== Character Settings =====
+Tabs.CharacterSettings:Button({
+    Title = "Revive",
+    Callback = function()
+        local Players = game:GetService("Players")
+        local player = Players.LocalPlayer
+        local ultimaPosicion = nil
+        local function esPosicionValida(pos)
+            local ray = Ray.new(pos, Vector3.new(0, -20, 0))
+            local part = workspace:FindPartOnRay(ray)
+            return part ~= nil
+        end
+        local function reemplazarAnimacion(character)
+            local humanoid = character:FindFirstChildOfClass("Humanoid")
+            if not humanoid then return end
+            local animator = humanoid:FindFirstChildOfClass("Animator")
+            if not animator then
+                animator = Instance.new("Animator")
+                animator.Parent = humanoid
+            end
+            for _, track in pairs(animator:GetPlayingAnimationTracks()) do
+                if track.Animation and track.Animation.AnimationId == "rbxassetid://18715800557" then
+                    track:Stop()
+                end
+            end
+            local anim = Instance.new("Animation")
+            anim.AnimationId = "rbxassetid://113201609340793"
+            local track = animator:LoadAnimation(anim)
+            track:Play()
+            anim:Destroy()
+        end
+        local function onCharacterAdded(character)
+            local hrp = character:WaitForChild("HumanoidRootPart")
+            local humanoid = character:WaitForChild("Humanoid")
+            if ultimaPosicion then
+                task.delay(0.2, function()
+                    if hrp then
+                        hrp.CFrame = CFrame.new(ultimaPosicion)
+                        reemplazarAnimacion(character)
+                    end
+                end)
+            end
+            humanoid.Died:Connect(function()
+                if hrp and esPosicionValida(hrp.Position) then
+                    ultimaPosicion = hrp.Position
+                end
+            end)
+        end
+        player.CharacterAdded:Connect(onCharacterAdded)
+        if player.Character then onCharacterAdded(player.Character) end
+        WindUI:Notify({ Title = "Revive", Content = "scary mango", Duration = 3 })
+    end
+})
+
+Tabs.CharacterSettings:Button({
+    Title = "Builder",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/MIYKO0EB/ScriptsIDK/refs/heads/main/BUILDER%20MODE%20V1.txt'))()
+        WindUI:Notify({ Title = "Builder Mode", Content = "me, not chat gpt, ok nga?", Duration = 3 })
+    end
+})
+
+-- ===== Stuff =====
+local stuff_buttons = {
+    {"Hein! Hein! (emote)", "https://raw.githubusercontent.com/r3k33551-bot/Acortador-de-scripts/refs/heads/main/Hein%20hein%3F!%3F", "hitler"},
+    {"1x1x1x1 anim", "https://raw.githubusercontent.com/r3k33551-bot/Acortador-de-scripts/refs/heads/main/1x1x1x1", "bugs"},
+    {"Chill anim", "https://raw.githubusercontent.com/r3k33551-bot/Acortador-de-scripts/refs/heads/main/Chill", "gud"},
+    {"Cursed anim", "https://raw.githubusercontent.com/r3k33551-bot/Acortador-de-scripts/refs/heads/main/Buggy%20animations", "xd"},
+    {"Debris Aura", "https://raw.githubusercontent.com/MIYKO0EB/ScriptsIDK/refs/heads/main/Debris%20Gojo%20Emote%20(Bugs)%20by%20MIYKO.txt", "u fel u dik on my ..."}
+}
+
+for _, v in ipairs(stuff_buttons) do
+    Tabs.Stuff:Button({ Title = v[1], Callback = function()
+        loadstring(game:HttpGet(v[2]))()
+        WindUI:Notify({ Title = v[1], Content = v[3], Duration = 3 })
+    end })
+end
+
+-- ===== Hubs =====
+Tabs.Hubs:Button({ Title = "LIMITED EMOTES V2 👽", Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/MIYKO0EB/ScriptsIDK/refs/heads/main/EMOTE%20HUB%20(50-100).txt'))()
+    WindUI:Notify({ Title = "LIMITED EMOTES V2", Content = "It's just a preview", Duration = 3 })
+end })
+
+Tabs.Hubs:Button({ Title = "DOMAIN HUB (EBHUBR BUT REWORKED) 🔥", Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/r3k33551-bot/Acortador-de-scripts/refs/heads/main/DMNHUB.txt"))()
+    WindUI:Notify({ Title = "DOMAIN HUB", Content = "release", Duration = 3 })
+end })
+
+-- Final touches
+Window:OnClose(function() print("Window closed") end)
+Window:OnDestroy(function() print("Window destroyed") end)
+Window:OnOpen(function() print("Window opened") end)
+Window:UnlockAll()
+task.wait(0.05)
+
+print("✅ Proyects Hub (WindUI) loaded — ESTRUCTURA COMPLETA con TODOS los botones.")
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+Rayfield:Notify({
+   Title = "YO BRO!!",
+   Content = "i will survive",
+   Duration = 6.5,
+   Image = 134256414823554,
+})
